@@ -11,6 +11,6 @@ export const GET = async (request) => {
       status: 200,
     });
   } catch (error) {
-    
+    return new Response("Failed to fetch your promptes", {status: 500})
   }
 };
